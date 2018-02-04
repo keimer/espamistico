@@ -79,26 +79,16 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Espacio Místico
+                    Profesionales
                 </div>
 
                 <div class="links">
-                    @foreach($links as $link => $texto)
-                    <a href="{{ $link }}">{{ $texto }}</a>
-                    @endforeach
-                </div>
-                <!-- <div class="links">
-                    <a href="/clientes">Clientes</a>
-                    <a href="/profesionales">Profesionales</a>
-                    <a href="/asesores">Asesores</a>
-                    <a href="/productos">Productos</a>
-                    <a href="/expos">Expos</a>
-                    <a href="/pagos">Pagos</a>
-                    <a href="/inventario">Inventario</a>
+                    <a href="/">Home</a>
+                    <!-- <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div> -->
+                    <a href="https://github.com/laravel/laravel">GitHub</a> -->
+                </div>
             </div>
         </div>
     </body>
