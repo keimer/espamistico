@@ -3,15 +3,15 @@
 @section('content');
     <div class="content">
         <div class="title m-b-md">
-            Espacio Místico
+            Bienvenido a Espacio Mítico....
         </div>
 
         <!-- //Implementando un foreach con blade -->
-        <div class="links">
+        <!-- <div class="links">
             @foreach($links as $link => $texto)
             <a href="{{ $link }}">{{ $texto }}</a>
             @endforeach
-        </div>
+        </div> -->
         <!-- <div class="links">
             <a href="/clientes">Clientes</a>
             <a href="/profesionales">Profesionales</a>
