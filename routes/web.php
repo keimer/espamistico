@@ -11,46 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    //Como usar variables en PHP y pasarla como parametro a la vista
-    $links = [
-        '/clientes' => 'Clientes',
-        '/asesores' => 'Asesores', 
-        '/profesionales' => 'Profesionales',
-        '/productos' => 'Productos',
-        '/expos' => 'Expos',
-        '/pagos' => 'Pagos',
-        '/inventario' => 'Inventario',
-    ];
-    return view('welcome', [
-        'links' => $links
-    ]);
-});
+Route::get('/', 'HomeController@home');
 
-Route::get('/clientes', function () {
-    return view('clientes');
-});
+Route::get('/agenda', 'AgendaController@agenda');
 
-Route::get('/asesores', function () {
-    return view('asesores');
-});
+Route::get('/clientes', 'ClientesController@clientes');
 
-Route::get('/profesionales', function () {
-    return view('profesionales');
-});
+Route::get('/asesores', 'AsesoresController@asesores');
 
-Route::get('/productos', function () {
-    return view('productos');
-});
+Route::get('/profesionales', 'ProfesionalesController@profesionales');
 
-Route::get('/expos', function () {
-    return view('expos');
-});
+Route::get('/productos', 'ProductosController@productos');
 
-Route::get('/pagos', function () {
-    return view('pagos');
-});
+Route::get('/expos', 'HomeController@expos');
 
-Route::get('/inventario', function () {
-    return view('inventario');
-});
+Route::get('/pagos', 'AsesoresController@pagos');
+
+Route::get('/inventario', 'ProductosController@inventario');

@@ -82,6 +82,7 @@
                     Espacio Místico
                 </div>
 
+                <!-- //Implementando un foreach con blade -->
                 <div class="links">
                     @foreach($links as $link => $texto)
                     <a href="{{ $link }}">{{ $texto }}</a>
