@@ -15,8 +15,11 @@ Route::get('/', 'HomeController@home');
 
 Route::get('/agenda', 'AgendaController@agenda');
 
+//------ C L I E N T E S -------
 Route::get('/clientes', 'ClientesController@clientes');
+Route::get('/detalleCliente/{cliente}', 'ClientesController@detalleCliente');
 
+//------ A S E S O R E S -------
 Route::get('/asesores', 'AsesoresController@asesores');
 
 Route::get('/profesionales', 'ProfesionalesController@profesionales');

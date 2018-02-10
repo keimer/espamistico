@@ -20,7 +20,7 @@ class HomeController extends Controller
             '/pagos' => 'Pagos',
             '/inventario' => 'Inventario',
         ];
-        return view('welcome', [
+        return view('home', [
             'links' => $links
         ]);
     }

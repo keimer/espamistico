@@ -1,6 +1,6 @@
-@extends('layouts.app');
+@extends('layouts.app')
 
-@section('content');
+@section('content')
     <div class="content">
         <div class="title m-b-md">
             Bienvenido a Espacio Mítico....
@@ -25,4 +25,4 @@
             <a href="https://github.com/laravel/laravel">GitHub</a>
         </div> -->
     </div>
-@endsection;
+@endsection

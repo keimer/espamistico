@@ -67,7 +67,7 @@
         </style> -->
     </head>
     <body>
-        <div class="jumbotron text-center">
+        <div class="text-center">
             <!-- @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -88,7 +88,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="/">Home </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/agenda">Agenda</a>
@@ -119,10 +119,9 @@
           </nav>
 
             <div class="container">
-                @yield('content');
+                @yield('content')  
             </div>
         </div>
-
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
