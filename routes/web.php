@@ -34,5 +34,5 @@ Route::get('/inventario', 'ProductosController@inventario');
 
 //------- Adicionadas al ejecutar "php artisan make:auth" para crear el módulo del login
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 //--------------------------------------------------------------------

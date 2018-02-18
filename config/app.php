@@ -13,7 +13,8 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Espacio Místico'),
+    'nameKZ' => env('APP_NAME_KZ', 'Laravel-KZ'),
 
     /*
     |--------------------------------------------------------------------------
