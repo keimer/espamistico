@@ -1,5 +1,15 @@
 @extends('layouts.app')
 
+@section('menu')
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            @include('layouts.menu')
+        </div>
+    </div>
+</div>
+@endsection
+
 @section('content')
 <div class="container">
     <div class="row">

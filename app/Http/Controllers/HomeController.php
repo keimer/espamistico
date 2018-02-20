@@ -40,9 +40,12 @@ class HomeController extends Controller
             '/pagos' => 'Pagos',
             '/inventario' => 'Inventario',
         ];
+
+        // dd($links);
         return view('home', [
             'links' => $links
         ]);
+        // return view('home');
     }
 
     //Método expos
