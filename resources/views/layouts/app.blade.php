@@ -16,21 +16,23 @@
     <!-- Styles -->
     <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/app.css">
+    <!-- <link rel="stylesheet" href="app.css"> -->
 
 </head>
 <body>
     <div id="app">
         <div class="container">
             <div class="row">
-            <div class="container">
-                <nav class="navbar navbar-light static-top navbar-toggleable-md">
-                    <!-- <div class="container"> -->
+                <!-- <nav class="navbar navbar-light static-top navbar-toggleable-md"> -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="col-4 ">
                         <!-- Branding Image -->
-                        <a class="navbar-brand ml-auto" href="{{ url('/') }}">
+                        <a class="navbar-brand " href="{{ url('/') }}">
                             {{config('app.nameKZ', 'Mi Espacio Místico')}}
-                            
                         </a>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-6">
                         <div class="collapse navbar-collapse" id="app-navbar-collapse">
                             <!-- Left Side Of Navbar -->
                             <!-- <ul class="navbar-nav">
@@ -41,8 +43,8 @@
                             <ul class="navbar-nav mr-auto">
                                 <!-- Authentication Links -->
                                 @guest
-                                    <li class="nav-item ml-auto"><a class="nav-link" href="{{ route('login') }}">Entrar</a></li>
-                                    <li class="nav-item ml-auto"><a class="nav-link" href="{{ route('register') }}">Registrarse</a></li>
+                                    <li class="nav-item "><a class="nav-link" href="{{ route('login') }}">Entrar</a></li>
+                                    <li class="nav-item "><a class="nav-link" href="{{ route('register') }}">Registrarse</a></li>
                                 @else
                                     <li class="nav-item dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
@@ -66,11 +68,10 @@
                                 @endguest
                             </ul>
                         </div>
-                    <!-- </div> -->
+                    </div>
                 </nav>
             </div>
-            </div>
-            <!-- <div class="container"> -->
+            
             <div class="row">
                 @yield('menu')
             </div>
